@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Title -->
+    <title>Proyecto Final - Panadeiro - Netflix Clone (Animeflix)</title>
+</head>
+
+<body>
+                <!-- EMPIEZA HEADER -->
+    <header class="content" id="registrarse">
+                <!-- NAVBAR -->
+        <nav class="content-nav">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <button id="sweetAlert" class="submit" type="submit">Iniciar sesión</button>
+            <select>
+                <option value="/ar/">Español</option>
+                <option value="/ar-en/">English</option>
+            </select>
+        </nav>
+
+                <!-- EMPIEZA CONTENIDO PRINCIPAL -->
+        <div class="content-principal">
+            <h1>¡No te pierdas de ningún anime!</h1>
+            <h2>Disfruta de tu anime favorito donde quieras. Cancela cuando quieras.</h2>
+                <!-- FORM CREAR CUENTA -->
+            <form id="formUser" class="email-container">
+                <h3>¿Quieres ver Animeflix ya? Ingresa tus datos para crear una cuenta o reiniciar tu membresía de Animeflix..</h3>
+                <input type="email" placeholder="Email" name="name" id="account">
+                <button type="submit">Comenzar ></button>
+            </form>
+        </div>
+    </header>
+                <!-- TERMINA HEADER -->
+
+                <!-- PESTAÑAS -->
+    <section class="tab">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancela cuando quieras.</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-tv fa-3x"></i>
+                <p class="hide-sm">Mira donde quieras.</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-tag fa-flip-horizontal fa-3x"></i>
+                <p class="hide-sm">Elige tu plan.</p>
+            </div>
+        </div>
+    </section>
+                <!-- PESTAÑA 1 -->
+    <section class="tab-content">
+        <div class="container">
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">Si decides que Animeflix no es para vos, no hay problema. Sin compromiso. Cancela cuando quieras.</p>
+                        <a href="#" class="btn btn-md">Anime gratis por 30 días</a>
+                    </div>
+                    <img src="img/contenido-1.png" alt="Cancelar">
+                </div>
+            </div>
+                <!-- PESTAÑA 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">Mira anime cuando quieras, donde quieras.</p>
+                    <a href="#" class="btn btn-md">Anime gratis por 30 días</a>
+                </div>
+                <div class="tab-2-content-bottom">
+                    <div>
+                        <img src="img/contenido-21.png" alt="TV">
+                        <p class="text-md">Mira anime en tu TV</p>
+                        <p class="text-dark">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+                    </div>
+                    <div>
+                        <img src="img/contenido-22.png" alt="Celular">
+                        <p class="text-md">Descarga anime para más tarde</p>
+                        <p class="text-dark">Guarda tu anime favorito y tendrás siempre algo para ver.</p>
+                    </div>
+                    <div>
+                        <img src="img/contenido-23.png" alt="Laptop">
+                        <p class="text-md">Disfruta donde quieras.</p>
+                        <p class="text-dark">Anime en tu teléfono, tablet, computadora y TV sin costo extra.</p>
+                    </div>
+                </div>
+            </div>
+                <!-- PESTAÑA 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <a href="#" class="btn btn-md">Anime gratis por 30 días</a>
+                </div>
+                <!-- TERMINA PESTAÑAS -->
+
+                <!-- TABLA DE PRECIOS -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Básico</th>
+                            <th>Estándar</th>
+                            <th>Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Costo mensual* (pesos argentinos)</td>
+                            <td>$379</td>
+                            <td>$639</td>
+                            <td>$939</td>
+                        </tr>
+                        <tr>
+                            <td>Cantidad de dispositivos en los que podrás ver contenido simultáneamente</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Cantidad de teléfonos o tablets en los que podrás almacenar descargas</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>Anime sin límite</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Ve en tu laptop, TV, teléfono o tablet</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>HD disponible</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Ultra HD disponible</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- TERMINA TABLA DE PRECIOS -->
+            </div>
+            <section class="question-container">
+                <h1>Preguntas frecuentes</h1>
+                <!-- Pregunta 1 -->
+                <div class="question-button-spacing">
+                    <button id="question1" type="button">
+                        ¿Qué es Animeflix?
+                        <img src="img/plus.png" alt="">
+                    </button>
+                    <div id="answer1" class="answer1">
+                        <p>
+                            Animeflix es un servicio de streaming que ofrece una gran variedad de anime en casi cualquier pantalla conectada a internet.
+                            <br><br>
+                            Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más anime!
+                        </p>
+                    </div>
+                </div>
+                    <!-- Pregunta 2 -->
+                <div class="question-button-spacing">
+                    <button id="question2" type="button">
+                        ¿Cuánto cuesta Animeflix?
+                        <img src="img/plus.png" alt="">                        
+                    </button>
+                    <div id="answer2" class="answer2">
+                        <p>
+                            Disfruta Animeflix en tu smartphone, tablet, smart TV, laptop o dispositivo de streaming, todo por una tarifa plana mensual. Planes desde $ 379 hasta $ 939 al mes (sin impuestos incluidos). Sin costos adicionales ni contratos.
+                        </p>
+                    </div>
+                </div>
+                    <!-- Pregunta 3 -->
+                <div class="question-button-spacing">
+                    <button id="question3" type="button">
+                        ¿Dónde puedo ver Animeflix? 
+                        <img src="img/plus.png" alt="">                       
+                    </button>
+                    <div id="answer3" class="answer3">
+                        <p>
+                            Disfruta donde quieras, cuando quieras. Inicia sesión en tu cuenta de Animeflix para ver contenido al instante a través de Animeflix.com desde tu computadora personal o en cualquier dispositivo con conexión a internet que cuente con la app de Animeflix, como smart TV, smartphones, tablets, reproductores multimedia y consolas de juegos.
+                            <br><br>
+                            Además, puedes descargar tus anime favoritos con iOS, Android o la app para Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a internet. Lleva Animeflix contigo adonde sea.
+                        </p>
+                    </div>
+                </div>
+                    <!-- Pregunta 4 -->
+                <div class="question-button-spacing">
+                    <button id="question4" type="button">
+                        ¿Cómo cancelo?      
+                        <img src="img/plus.png" alt="">                  
+                    </button>
+                    <div id="answer4" class="answer4">
+                        <p>
+                            Animeflix es flexible. Sin contratos molestos ni compromisos. Cancela la membresía online con solo dos clics. No hay cargos por cancelación. Empieza y termina cuando quieras.
+                        </p>
+                    </div>
+                </div>
+                    <!-- Pregunta 5 -->
+                <div class="question-button-spacing">
+                    <button id="question5" type="button">
+                        ¿Qué puedo ver en Animeflix?   
+                        <img src="img/plus.png" alt="">                     
+                    </button>
+                    <div id="answer5" class="answer5">
+                        <p>
+                            Animeflix tiene un amplio catálogo de anime. Todo lo que quieras ver, cuando quieras.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="email-container">
+        <h3>¿Quieres ver Animeflix ya? Haz click en el botón para crear una cuenta.</h3> <br><br>
+        <a href="#registrarse"><button type="submit">ANIME GRATIS POR 30 DÍAS ></button></a>
+        <div class="email-faq-2"></div>
+    </div>
+
+    <!-- EMPIEZA FOOTER -->
+    <footer class="footer">
+        <h5>¿Preguntas? Contáctanos.</h5>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Relaciones con inversionistas</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Prueba de velocidad</a></li>
+                <br><br>
+                <select>
+                    <option value="/ar/">Español</option>
+                    <option value="/ar-en/">English</option>
+                </select>
+                <br><br>
+                <p>Animeflix Argentina</p>
+            </ul>
+            <ul>
+                <li><a href="#">Centro de ayuda</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Preferencias de cookies</a></li>
+                <li><a href="#">Avisos legales</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Formas de ver</a></li>
+                <li><a href="#">Información corporativa</a></li>
+                <li><a href="#">Solo en Animeflix</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Términos de uso</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </div>
+    </footer>
+    <p class="footer-autor text-white">Copyright Tomás Panadeiro © <br><br> Javascript</p>
+    <!-- TERMINA FOOTER -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f8493e032d.js" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

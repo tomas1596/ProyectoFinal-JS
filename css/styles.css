@@ -1,0 +1,499 @@
+/* Variable Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenido */
+
+body{    
+    background: black;
+    color: grey;    
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2, h3, h4{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/*EMPIEZA Contenido Principal */
+.content{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.content::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 40px 0px 250px  black, inset -40px 0px 250px  black ;
+}
+
+.content-nav{
+    position: relative;
+    z-index: 2;
+    padding: 26px 0px 0px 55px;
+}
+
+.content-nav img{
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 2%;
+}
+
+.content-nav .submit{
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 5px 16px;
+    border-radius: 2px;
+    float: right;
+    position: relative;
+    right: 55px;
+    height: 35px;
+    width: 130px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.content-nav select{
+    background-color: transparent;
+    color: white;
+    border-radius: 1px;
+    padding: 5px 10px;
+    float: right;
+    position: relative;
+    right: 85px;
+    height: 35px;
+}
+.content-nav select option{
+    background-color: grey;
+}
+
+.content-principal{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 8rem;
+    z-index: 2;
+}
+
+.content-principal h1{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+    max-width: 800px;
+}
+
+.content-principal h2{
+    max-width: 800px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 16px 75px;
+}
+/*TERMINA Contenido Principal */
+
+/*EMPIEZA Pestañas */
+.tab{
+    background: #141414;
+    padding-top: 1rem;
+    border-bottom: 3px solid #222;
+}
+
+.tab .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tab p{
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+.tab .container > div {
+    padding: 1rem;
+}
+
+.tab .container > div:hover{
+    color: rgb(71, 71, 71);
+    cursor: pointer;
+}
+
+.tab-border{
+    border-bottom: red 4px solid;
+}
+
+#tab-1-content, #tab-2-content, #tab-3-content {
+	display: none;
+	opacity: 0;
+}
+
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
+}
+
+.tab-content{
+    padding: 3rem 0;
+    color: white;
+    background: black;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+/*TERMINA Pestañas */
+
+/*EMPIEZA TABLA */
+.table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.table thead th {
+	text-transform: uppercase;
+	padding: 0.8rem;
+}
+
+.table tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+.table tbody tr td {
+	color: #999;
+	padding: 0.8rem 1.8rem;
+	text-align: center;
+}
+
+.table tbody tr td:first-child {
+	text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+	background: #222;
+}
+/*TERMINA TABLA */
+
+/*EMPIEZA PREGUNTAS */
+.question-container{
+    background-color: black;
+    border-top: 8px solid #222;
+    padding-top: 60px;
+}
+
+.question-container h1{
+    color: white;
+    text-align: center;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 3rem;
+}
+
+.question-container button{
+    border: none;
+    background-color: #303030;
+    color: white;
+    width: 60%;
+    padding: .8em 2.2em .8em 1.2em;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.question-button-spacing{
+    margin-bottom: 10px;
+}
+
+.question-container button img{
+    width: 3%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    right: 20px;
+}
+
+.question-container .answer1, .answer2, .answer3, .answer4, .answer5{
+    background-color: #303030;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+    display: none;
+}
+/*TERMINA PREGUNTAS */
+
+/*EMPIEZA EMAIL*/
+.email-container{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+
+
+
+.email-container h3{
+    font-weight: lighter;
+}
+
+.email-container input{
+    width: 30%;
+    padding: 22px;
+    border: none;
+    margin-top: 1%;
+    margin-right: 2px;
+    outline: none;
+    font-size: 1.7rem;
+    border-radius: 1px;
+}
+
+.email-container button{
+    padding: 22px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    margin-left: -0.3%;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.email-container-bottom{
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+
+.email-container-bottom h3{
+    font-weight: lighter;
+}
+
+.email-container-bottom input{
+    width: 25%;
+    padding: 22px;
+    border: none;
+    margin-top: 1%;
+    outline: none;
+    font-size: 1.7rem;
+    border-radius: 1px;
+}
+
+.email-container-bottom button{
+    padding: 22px;
+    border: none;
+    background-color: #e50914;
+    color: white;
+    margin-left: 1px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.email-faq{
+    border-bottom: 3px solid #222;
+}
+
+.email-faq-2{
+    margin-top: 2rem;
+    border-bottom: 3px solid #222;
+}
+/*TERMINA EMAIL*/
+
+.btn{
+    display: inline-block;
+    background: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.4rem 1.3rem;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 3px;
+}
+
+/* EMPIEZA FOOTER  */
+
+.footer {
+	max-width: 50%;
+	margin: auto;
+	overflow: auto;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+}
+
+.footer, .footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer h5 {
+	margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+    padding-top: 0.5rem;
+}
+
+footer select{
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid grey;
+    color: white;
+}
+footer select option{
+    background-color: grey;
+}
+
+.footer-autor{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/* TERMINA FOOTER */
+
+/* EMPIEZA BOTONES Y TEXTOS */
+.btn:hover {
+    opacity: 0.95;
+}
+
+.btn-redondo{
+    border-radius: 5px;
+}
+
+.btn-grande{
+    font-size: 1.8rem;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+}
+
+.btn-md{
+    font-size: 1rem;
+    padding: 0.7rem 1.3rem;
+    text-transform: uppercase;
+}
+
+.text-xl{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.text-lg{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.text-md{
+    margin-bottom: 1.5rem;
+	font-size: 1.2rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
+
+.text-white{
+    color: white;
+}
+/* TERMINA BOTONES Y TEXTOS */
